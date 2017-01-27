@@ -1,0 +1,40 @@
+span.photos{ position: relative; }
+span.photos .attach{
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+	font-size: 100px;
+	text-align: right;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	background: red;
+	cursor: inherit;
+	display: block;	
+}
+span.photos:hover .deleted-btn{ display: block; }
+span.photos img{
+	height: 140px;
+    width: 140px;
+}
+.deleted-btn{
+	position: absolute;
+	z-index: 100;
+	display: none;
+	right: 25px;
+	top: 15px;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background-color: #848080;
+}
+.deleted-btn .fa{ color: #fff; } 
+.section-body{ padding-bottom: 95px; }
+
+span.required{
+	color: red;
+}
